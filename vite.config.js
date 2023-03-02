@@ -1,0 +1,24 @@
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { resolve } from 'path'
+
+const viteConfig =  () => {
+  return defineConfig({
+    plugins: [react()],
+    build: {
+      outDir: "build",
+      rollupOptions: {
+        input: {
+          main: resolve(__dirname, 'index.html'),
+        },
+      }
+    },
+    esbuild: {
+      jsxFactory: 'h',
+      jsxFragment: 'Fragment',
+    },
+ })
+}
+
+
+export default viteConfig;
