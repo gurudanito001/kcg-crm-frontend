@@ -63,7 +63,7 @@ function App() {
           <Route path="/forgotPassword" element={<ForgotPassword />} />
           <Route path="/resetPassword" element={<ResetPassword />} />
 
-          <Route path="/app/dashboard" element={<Dashboard />} />
+          <Route path="/" element={<Dashboard />} />
 
           <Route path="/app/company/" element={<AllCompanies />} />
           <Route path="/app/company/add" element={<AddCompany />} />
