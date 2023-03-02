@@ -1,6 +1,5 @@
 {
   "name": "kcg-crm-frontend",
-  "homepage": "https://gurudanito001.github.io/kcg-crm-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

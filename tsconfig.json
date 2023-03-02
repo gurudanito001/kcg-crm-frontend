@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "outDir": "build",
     "types": ["vite/client"],
     "target": "es5",
     "lib": [

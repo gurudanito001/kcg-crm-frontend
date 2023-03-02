@@ -12,11 +12,7 @@ const viteConfig =  () => {
           main: resolve(__dirname, 'index.html'),
         },
       }
-    },
-    esbuild: {
-      jsxFactory: 'h',
-      jsxFragment: 'Fragment',
-    },
+    }
  })
 }
 
