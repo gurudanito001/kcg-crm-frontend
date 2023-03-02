@@ -1,11 +1,6 @@
-import VisibilityOff from "../../../images/visibility-off.svg";
-import FacebookIcon from "../../../images/facebookIcon.svg";
-import GoogleIcon from "../../../images/googleIcon.svg";
-import EmojiLady2 from "../../../images/emojiLady2.png"
+
 import '../../../styles/auth.styles.css';
 import { useState } from "react";
-import PlaceHolderBg from "../../../images/placeHolderAuthBg.png";
-import InsideNav from "../../../components/insideNav";
 import PasswordInput from "../../../components/passwordInput";
 import Layout from "../../../components/layout";
 import { useNavigate } from "react-router-dom";

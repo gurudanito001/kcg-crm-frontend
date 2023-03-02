@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Register from './pages/auth/register';
+import Dashboard from './pages/app/dashboard/dashboard';
 import Login from './pages/auth/login';
 import VerifyEmail from './pages/auth/verifyEmail';
 import ForgotPassword from './pages/auth/forgotPassword';
@@ -58,10 +58,12 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/verifyEmail" element={<VerifyEmail />} />
           <Route path="/forgotPassword" element={<ForgotPassword />} />
           <Route path="/resetPassword" element={<ResetPassword />} />
+
+          <Route path="/app/dashboard" element={<Dashboard />} />
 
           <Route path="/app/company/" element={<AllCompanies />} />
           <Route path="/app/company/add" element={<AddCompany />} />
@@ -107,7 +109,6 @@ function App() {
           <Route path="/app/delivery/add" element={<AddVehicleDelivery />} />
           <Route path="/app/delivery/:id" element={<VehicleDeliveryDetails />} />
 
-          
         </Routes>
       </Router>
     </>
